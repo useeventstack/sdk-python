@@ -1,0 +1,61 @@
+# ─── Environment ─────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+!.env.production.example
+
+# ─── Rust ────────────────────────────────────────────────────────────────────
+**/target/
+**/*.rs.bk
+
+# ─── Node / Frontend ────────────────────────────────────────────────────────
+node_modules/
+dist/
+.astro/
+.vite/
+coverage/
+*.tsbuildinfo
+
+# ─── Logs ────────────────────────────────────────────────────────────────────
+*.log
+
+# ─── Infrastructure ─────────────────────────────────────────────────────────
+**/.terraform/
+*.tfstate
+*.tfstate.*
+infrastructure/cdk/cdk.out/
+
+# ─── Editor / OS ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# ─── AI / Agent Tooling ──────────────────────────────────────────────────────
+.agents
+.kiro
+.jules
+
+# ─── Pipeline / CI Artifacts ─────────────────────────────────────────────────
+.pipeline-state
+coverage-report.xml
+
+
+# ─── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+
+# Local-only test credentials for scratch/verify scripts. Never commit.
+scratch/.ues_test_key
+scratch/*.key
+scratch/readme_tests/
+venv/
+.venv/
